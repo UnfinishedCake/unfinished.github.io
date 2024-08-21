@@ -1,0 +1,208 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Chris's Online Portfolio</title>
+        <style type="text/css">
+            body {
+                background: url("assets/images/background.png");
+                background-attachment: fixed;
+                background-size: cover;
+                background-position: left;
+                color: rgb(45, 45, 45);
+                padding: 10px;
+                font-family: arial;
+            }
+            header {
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+            h1 {
+                margin: 10px;
+            }
+            #all-contents {
+                max-width: 1000px;
+                margin: auto;
+            }
+            nav {
+                background: rgb(18, 69, 165);
+                margin: 0 auto;
+                display: flex;
+                padding: 10px;
+            }
+            nav header {
+                display: flex;
+                align-items: center;
+                color: rgb(255, 255, 255);
+                flex: 1;
+            }
+            nav ul {
+                list-style-image: none;
+            }
+            nav li {
+                display: inline-block;
+                padding: 0 10px;
+            }
+            nav a {
+                text-decoration: none;
+                color: #fff;
+            }
+            main {
+                background: rgb(75, 75, 75);
+                display: flex;
+                color: #fff;
+            }
+            .content {
+                flex: 1;
+                padding: 15px;
+            }
+            #portfolio {
+                list-style-type: none;
+                padding-left: 0;
+            }
+            
+            #portfolio li {
+                background: #fff;
+                padding: 10px;
+                border-radius: 10px;
+                margin-bottom: 10px;
+            }
+            
+            #portfolio li:hover {
+                background: #eee;
+            } 
+            
+            #portfolio a {
+                text-decoration: none;
+                color: #454545;
+            }
+
+            .head {
+                text-align: center;
+            }
+
+            .border {
+                border-top: 4px solid rgb(18, 69, 165);
+            }
+        </style>
+    </head>
+
+    <body onload="flourishDemo(); doodleDemo(); howdyDemo()">
+      <div id="all-contents">
+        <nav>
+            <header>My Online Portfolio</header>
+            <ul>
+                <li><a href="index.html">Home</a>
+                </li>
+                <li><a href="portfolio.html">Portfolio</a>
+                </li>
+                <li><a href="technologies.html">Technologies</a>
+                </li>
+            </ul>
+        </nav>
+      <main>
+            <div class="content">
+                <h1 class="head">Portfolio</h1>
+                <div>
+                  <h2>Safe Spot</h2>
+                  <p>A quick-paced puzzle game with Bomberman-like elements built for mobile entertainment.</p>
+                  <p>Features: Browser/Mobile Compatible, Single Player Experience Game Loop, Scoreboard</p>
+                  <p>Tech Stack: Unity, C#</p>
+                  <div>
+                    <a href="https://chryen.itch.io/safe-spot" target="_blank">https://chryen.itch.io/safe-spot</a>
+                  </div>
+                </div>
+                <div>
+                  <h2 class="border"> </h2>
+                  <h2>Project: Lost</h2>
+                  <p>A 2D rougelike, video game with themes heavily inspired by Dungeons and Dragons.</p>
+                  <p>Features: Browser Compatible, Tutorial, Single Player Experience Game Loop</p>
+                  <p>Tech Stack: Unity, C#</p>
+                  <div>
+                    <a href="https://chryen.itch.io/project-lost" target="_blank">https://chryen.itch.io/project-lost</a>
+                  </div>
+                </div>
+                <div>
+                  <h2 class="border"> </h2>
+                  <h2>Flourish</h2>
+                  <p>A social media, mobile application for the community of plant enthusiasts.</p>
+                  <p>Features: Plant Identification, Augmented Reality, Direct Messaging, Posting, Following, & Sharing</p>
+                  <p>Tech Stack: React Native, Redux, Expo, ngrok, Google Login, PlantId, FeathersJS, Node.js, MariaDB, Three.js, GooglePoly</p>
+                  <button onclick="flourishDemo()">Flourish Demo</button>
+                  <div id="flourishDemo">
+                    <video width="320" height="240" controls>
+                      <source src="assets/videos/Flourish Demo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                  </div>
+                </div>
+                <div>
+                  <h2 class="border"> </h2>
+                  <h2>Doodle Society</h2>
+                  <p>An image sharing, web application for sharing edited images and live drawing.</p>
+                  <p>Features: Geolocation, Live Doodling, Instant Messaging, Sharing via Text Message, & Rankings</p>
+                  <p>Tech Stack: React, Twilio, Bootstrap, Pusher, Cloudinary, Fastify, NodeJS, Postgres, Google Maps</p>
+                  <button onclick="doodleDemo()">Doodle Society Demo</button>
+                  <div id="doodleDemo">
+                    <video width="320" height="240" controls>
+                      <source src="assets/videos/Doodle Society Demo.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </div>
+                <div>
+                  <h2 class="border"> </h2>
+                  <h2>Howdy</h2>
+                  <p>A chatroom, web application for hosting/joining parties with neighbors within your location.</p>
+                  <p>Features: Geolocation, Google Authentication, Live Messaging, Game (Who Am I?), & Creating a Party</p>
+                  <p>Tech Stack: React, Socket.io, React-Router, Google oAuth, Axios, Express, Node.js, MySql</p>
+                  <button onclick="howdyDemo()">Howdy Demo</button>
+                  <div id="howdyDemo">
+                    <video width="320" height="240" controls>
+                      <source src="assets/videos/Howdy Demo.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </div>
+                <div>
+                  <h2 class="border"> </h2>
+                  <h2>Illustrious (Website temporarily down due to funds)</h2>
+                  <p>A virtual reality portfolio.</p>
+                  <p>Features: Virtual Reality, Video Demos of Projects</p>
+                  <p>Tech Stack: HTML, A-Frame</p>
+                  <div>
+                    <a href="https://chryen.github.io/illustrious/">https://chryen.github.io/illustrious/</a>
+                  </div>
+                </div>
+            </div>
+        
+      </main>
+      </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script>
+          function flourishDemo() {
+            var x = document.getElementById("flourishDemo");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            }
+          }
+          function doodleDemo() {
+            var x = document.getElementById("doodleDemo");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            }
+          }
+          function howdyDemo() {
+            var x = document.getElementById("howdyDemo");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            }
+          }
+          </script>
+    </body>
+</html>
